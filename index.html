@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playfair Cipher</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="top-section">
+      <h1>Playfair Cipher</h1>
+      <p>Encrypt and Decrypt messages using the Playfair Cipher Algorithm</p>
+    </div>
+
+    <div class="card">
+
+      <div class="input-group">
+        <label>Keyword</label>
+        <input type="text" id="key" placeholder="Enter keyword..." />
+      </div>
+
+      <div class="input-group">
+        <label>Plain / Cipher Text</label>
+        <textarea id="message" placeholder="Enter your message..."></textarea>
+      </div>
+
+      <div class="button-group">
+        <button id="encryptBtn">Encrypt</button>
+        <button id="decryptBtn">Decrypt</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+
+      <div class="result-section">
+        <h3>Prepared Text</h3>
+        <div id="preparedText" class="result-box"></div>
+
+        <h3>Result</h3>
+        <div id="result" class="result-box"></div>
+
+        <button id="copyBtn">Copy Result</button>
+      </div>
+
+    </div>
+
+    <div class="matrix-card">
+      <h2>5 × 5 Matrix</h2>
+      <div id="matrix" class="matrix"></div>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
+
